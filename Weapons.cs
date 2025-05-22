@@ -12,3 +12,4 @@
         GoodAgainst = goodAgainst;
     }
 }
+
