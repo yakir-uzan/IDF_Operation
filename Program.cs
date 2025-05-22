@@ -10,6 +10,8 @@ namespace IDF_Operation
     {
         static void Main(string[] args)
         {
+            Hamas hamas = new Hamas();
+            Terorrist ahmad = new Terorrist(hamas, "Ahmad", "m16", "5", "alive");
         }
     }
 }
