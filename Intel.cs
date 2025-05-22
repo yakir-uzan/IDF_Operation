@@ -10,7 +10,7 @@ public class Intel
     {
         this.Terorrist = terorrist;
         this.Location = location;
-        this.TimeStamp = timeStamp;   
+        this.TimeStamp = timeStamp;
     }
-        
+
 }
