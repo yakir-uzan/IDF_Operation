@@ -2,7 +2,10 @@
 
 public class AttackManager
 {
+    //רשימת נשקים
     public List<Weapons> ListWeapons = new List<Weapons>();
-    public List<Intel> ListiNTEL = new List<Intel>();
+    //רשימת ידיעות
+    public List<Intel> ListIntel = new List<Intel>();
+    //
 }
 
