@@ -7,16 +7,13 @@ public class Hamas
 
     public void ChengeStatus(Terorrist terrorist)
     {
-        foreach(Terorrist terror in terorrists)
-        {
-            if (terror == terrorist)
-            {
-                terror.Status = "dead";
-            }
-        }
+            
+                terrorist.Status = "dead";
+            
+        
     }
 
 
 
-    public 
+    
 }

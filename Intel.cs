@@ -13,4 +13,5 @@ public class Intel
         this.TimeStamp = timeStamp;
     }
 
+
 }

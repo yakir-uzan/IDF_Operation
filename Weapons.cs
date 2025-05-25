@@ -11,5 +11,8 @@
         NumAttacks = numAttacks;
         GoodAgainst = goodAgainst;
     }
+    
+
+    
 }
 
