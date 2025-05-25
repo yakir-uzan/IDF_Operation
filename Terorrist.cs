@@ -1,4 +1,4 @@
-﻿public class Terorrist
+﻿public class Terrorist
 {
     public int ID;
     public string Name;
@@ -6,7 +6,7 @@
     public string Rank;
     public string Status;
 
-    public Terorrist(int id,string name, string weapon, string rank, string status)
+    public Terrorist(int id,string name, string weapon, string rank, string status)
     {
         ID = id;
         Name = name;
