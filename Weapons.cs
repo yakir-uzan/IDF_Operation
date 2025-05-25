@@ -19,7 +19,7 @@ public class Weapons
     public void AddWeapons(string name, int numAttacks, string goodAgainst)
     {
         var Weapon = new Weapons(name, numAttacks, goodAgainst);
-         Weapons.Add(Weapon);
+         ListWeapons.Add(Weapon);
     }
 
 
