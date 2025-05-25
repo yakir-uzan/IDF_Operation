@@ -1,4 +1,6 @@
-﻿public class Weapons
+﻿using System.Collections.Generic;
+
+public class Weapons
 {
     public string Name;
     public int NumAttacks;
@@ -11,5 +13,16 @@
         NumAttacks = numAttacks;
         GoodAgainst = goodAgainst;
     }
+
+    //רשימת כלי נשק
+    public List<Weapons> ListWeapons = new List<Weapons>();
+    public void AddWeapons(string name, int numAttacks, string goodAgainst)
+    {
+        var Weapon = new Weapons(name, numAttacks, goodAgainst);
+         Weapons.Add(Weapon);
+    }
+
+
 }
+
 
