@@ -13,7 +13,7 @@ public class Hamas
     }
 public void ChengeStatus(Terorrist terrorist)
     {
-        foreach(Terorrist terror in terorrists)
+        foreach(Terorrist terror in listTerorrists)
         {
             if (terror == terrorist)
             {
