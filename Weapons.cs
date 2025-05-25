@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 public class Weapons
 {
@@ -19,9 +20,18 @@ public class Weapons
     public void AddWeapons(string name, int numAttacks, string goodAgainst)
     {
         var Weapon = new Weapons(name, numAttacks, goodAgainst);
-         Weapons.Add(Weapon);
+         ListWeapons.Add(Weapon);
     }
-
+    //מוריד אחד פחות
+    public void Updateless_one(Weapons weapons)
+    {
+        weapons.NumAttacks -= 1;
+    }
+    //מדפיס את כמות התחמושת המעודכנת
+    public void PrintUpdate(Weapons weapons)
+    {
+        Console.WriteLine(weapons.NumAttacks);
+    }
 
 }
 
