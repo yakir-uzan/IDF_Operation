@@ -2,11 +2,11 @@
 
 public class Intel
 {
-    public Terorrist Terorrist;
+    public Terrorist Terorrist;
     public string Location;
     public string TimeStamp;
 
-    public Intel(Terorrist terorrist, string location, string timeStamp)
+    public Intel(Terrorist terorrist, string location, string timeStamp)
     {
         this.Terorrist = terorrist;
         this.Location = location;
