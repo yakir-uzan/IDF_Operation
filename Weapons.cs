@@ -16,13 +16,12 @@ public class Weapons
 
     //רשימת כלי נשק
     public List<Weapons> ListWeapons = new List<Weapons>();
-    public void AddWeapons(string name, int numAttacks, string goodAgainst)
+    //הוספת כלי נשק לרשימה
+    public void AddWeapon(string name, int numAttacks, string goodAgainst)
     {
         var Weapon = new Weapons(name, numAttacks, goodAgainst);
-         Weapons.Add(Weapon);
+         ListWeapons.Add(Weapon);
     }
-
-
 }
 
 
