@@ -11,6 +11,8 @@ public class Hamas
     var terorrist = new Terorrist(id, name, weapon, rank, status);
     ListTerorrists.Add(terorrist);
     }
+
+    //הפיכת סטטוס המחבל
 public void ChengeStatus(Terorrist terrorist)
     {
         foreach(Terorrist terror in ListTerorrists)

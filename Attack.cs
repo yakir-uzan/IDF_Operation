@@ -3,6 +3,6 @@
     public Weapons weapon;
     public Attack(Intel intel)
     {
-        if ()
+    
     }
 }
