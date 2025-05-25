@@ -2,8 +2,14 @@
 
 public class Hamas
 {
-    //רשימת מחבלים
-    public List<Terorrist> Terorrists = new List<Terorrist>();
+      //רשימת מחבלים
+    public List<Terorrist> terorrists = new List<Terorrist>();
+
+
+    
+
+
+
 
     //הוספת מחבלים לרשימה
     public void AddTerorrist(int id,string name, string weapon, string rank, string status)
@@ -11,5 +17,17 @@ public class Hamas
     var terorrist = new Terorrist(id, name, weapon, rank, status);
     Terorrists.Add(terorrist);
     }
+public void ChengeStatus(Terorrist terrorist)
+    {
+        foreach(Terorrist terror in terorrists)
+        {
+            if (terror == terrorist)
+            {
+                terror.Status = "dead";
+            }
+        }
+    }
+
 }
+
 

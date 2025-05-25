@@ -10,6 +10,10 @@ namespace IDF_Operation
     {
         static void Main(string[] args)
         {
+
+            //Hamas hamas = new Hamas();
+            //Terorrist ahmad = new Terorrist(hamas, "Ahmad", "m16", "5", "alive");
+            
          Hamas objHamas = new Hamas();
          objHamas.AddTerorrist(1, "Ahmad", "m16", "5", "alive");
          objHamas.AddTerorrist(2, "Ahmad", "m16", "4", "alive");
