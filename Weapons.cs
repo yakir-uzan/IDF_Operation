@@ -22,17 +22,18 @@ public class Weapons
         var Weapon = new Weapons(name, numAttacks, goodAgainst);
          ListWeapons.Add(Weapon);
     }
+  
     //מוריד אחד פחות
     public void Updateless_one(Weapons weapons)
     {
         weapons.NumAttacks -= 1;
     }
+  
     //מדפיס את כמות התחמושת המעודכנת
     public void PrintUpdate(Weapons weapons)
     {
         Console.WriteLine(weapons.NumAttacks);
     }
-
 }
 
 
