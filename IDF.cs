@@ -2,6 +2,7 @@
 
 public class IDF
 {
+    //מאפיניי הארגון
     public int CreationDate;
     public string Commander;
 
@@ -13,6 +14,14 @@ public class IDF
 
     //רשימת נשקים
     public List<Weapons> ListWeapons = new List<Weapons>();
+  
+    //הוספת כלי נשק לרשימה
+    public void AddWeapon(string name, int numAttacks, string goodAgainst)
+    {
+        var Weapon = new Weapons(name, numAttacks, goodAgainst);
+        ListWeapons.Add(Weapon);
+    }
+
     //רשימת ידיעות
-    public List<Intel> ListIntel = new List<Intel>();
+    public List<Intel> ListIntel = new List<Intel>();    
 }
