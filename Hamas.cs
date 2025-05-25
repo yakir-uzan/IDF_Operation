@@ -1,19 +1,19 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
 public class Hamas
 {
     //רשימת מחבלים
-    public List<Terorrist> listTerorrists = new List<Terorrist>();
+    public List<Terorrist> ListTerorrists = new List<Terorrist>();
 
     //הוספת מחבלים לרשימה
     public void AddTerorrist(int id,string name, string weapon, string rank, string status)
     {
     var terorrist = new Terorrist(id, name, weapon, rank, status);
-    listTerorrists.Add(terorrist);
+    ListTerorrists.Add(terorrist);
     }
-public void ChengeStatus(Terorrist terrorist)
+  public void ChengeStatus(Terorrist terrorist)
     {
-        foreach(Terorrist terror in listTerorrists)
+        foreach(Terorrist terror in ListTerorrists)
         {
             if (terror == terrorist)
             {
