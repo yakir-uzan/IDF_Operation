@@ -1,3 +1,4 @@
+﻿using System;
 using System.Collections.Generic;
 
 public class Hamas
@@ -15,15 +16,15 @@ public class Hamas
     //הפיכת סטטוס המחבל
 public void ChengeStatus(Terorrist terrorist)
     {
-        foreach(Terorrist terror in ListTerorrists)
-        {
-            if (terror == terrorist)
-            {
-                terror.Status = "dead";
-            }
-        }
-    }
+     terrorist.Status = "dead";
+    }      
+            
 
+    public void Printstatus(Terorrist terrorist)
+    {
+        Console.WriteLine($"the{terrorist.Name}is{terrorist.Status }");
+    }
+  
 }
 
 
