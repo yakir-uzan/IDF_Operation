@@ -21,9 +21,9 @@ public class IDF
 
         //אתחול עם 3 כלי נשק
         ListWeapons = new List<Weapons> {
-            new Weapons("f16", 0, "Car"),
-            new Weapons("m640", 0, "Open space"),
-            new Weapons("j689", 0, "Structure")
+            new Weapons("f16", 0, "car"),
+            new Weapons("m640", 0, "open"),
+            new Weapons("j689", 5, "hous")
         };
     }
 
@@ -51,9 +51,17 @@ public class IDF
     //רשימת ידיעות
     public List<Intel> ListIntel = new List<Intel>();
 
-    public void AddedIntel()
+    public void AddedIntel( Terrorist terrorist,string loccatgion, string timestemp)
     {
-        ListIntel.Add();
+        var intel = new Intel(terrorist ,loccatgion, timestemp);
+        ListIntel.Add(intel);
+    }
+    public void PrintIntel()
+    {
+        foreach (Intel a in ListIntel)
+        {
+            Console.WriteLine($"{a.Name} {a.Location} {a.TimeStamp}");
+        }
     }
 
     //שינוי סטטוס מחבל

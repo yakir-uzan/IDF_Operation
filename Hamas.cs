@@ -9,8 +9,8 @@ public class Hamas
     //הוספת מחבלים לרשימה
     public void AddTerorrist(int id,string name, string weapon, string rank, string status)
     {
-    var terorrist = new Terrorist(id, name, weapon, rank, status);
-    ListTerorrists.Add(terorrist);
+    var terrorist = new Terrorist(id, name, weapon, rank, status);
+    ListTerorrists.Add(terrorist);
     }
   
     //הפיכת סטטוס המחבל
