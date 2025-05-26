@@ -19,8 +19,13 @@ namespace IDF_Operation
          objHamas.AddTerorrist(3, "Dia", "m16", "3", "alive");
          objHamas.AddTerorrist(4, "Adam", "m16", "2", "alive");
 
-        //הוספת ידיעה לרשימה
-        Intel inform = new Intel(objHamas.ListTerorrists[0],"gaza", "20:00");
+
+
+
+            //הוספת ידיעה לרשימה
+            IDF idf = new IDF();
+            idf.AddedIntel();
+
         }
     }
 }

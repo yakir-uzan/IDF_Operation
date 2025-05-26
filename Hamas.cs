@@ -4,23 +4,23 @@ using System.Collections.Generic;
 public class Hamas
 {
     //רשימת מחבלים
-    public List<Terorrist> ListTerorrists = new List<Terorrist>();
+    public List<Terrorist> ListTerorrists = new List<Terrorist>();
 
     //הוספת מחבלים לרשימה
     public void AddTerorrist(int id,string name, string weapon, string rank, string status)
     {
-    var terorrist = new Terorrist(id, name, weapon, rank, status);
+    var terorrist = new Terrorist(id, name, weapon, rank, status);
     ListTerorrists.Add(terorrist);
     }
   
     //הפיכת סטטוס המחבל
-public void ChengeStatus(Terorrist terrorist)
+public void ChengeStatus(Terrorist terrorist)
     {
      terrorist.Status = "dead";
     }      
             
 
-    public void Printstatus(Terorrist terrorist)
+    public void Printstatus(Terrorist terrorist)
     {
         Console.WriteLine($"the{terrorist.Name}is{terrorist.Status }");
     }

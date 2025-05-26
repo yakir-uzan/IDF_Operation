@@ -1,8 +1,9 @@
-﻿public class Attack
+﻿using System;
+
+public class Attack 
 {
-    public Weapons weapon;
-    public Attack(Intel intel)
+    public Attack(IDF idf)
     {
-    
+        Console.WriteLine( "בוצעה תקיפה");
     }
 }

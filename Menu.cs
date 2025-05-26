@@ -16,7 +16,7 @@ namespace IDF_Operation
                 string shose = Console.ReadLine();
                 switch (shose)
                 {
-//לבדוק האם קיים מחבל עם השם הזאת
+                        //לבדוק האם קיים מחבל עם השם הזאת
                     case "a":
                         break;
                         //להוסיף מיקום למחבל הנל
